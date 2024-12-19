@@ -1,1 +1,0 @@
-{"root":["./src/index.ts","./src/config/db.ts","./src/controllers/content.controller.ts","./src/controllers/user.controller.ts","./src/middlewares/auth.middleware.ts","./src/models/user.model.ts","./src/routes/user.route.ts","./src/services/user.service.ts","./src/types/index.d.ts","./src/utils/logger.ts"],"version":"5.7.2"}
