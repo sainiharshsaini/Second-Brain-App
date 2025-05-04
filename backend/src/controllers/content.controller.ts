@@ -33,12 +33,9 @@ export const getUserContent: RequestHandler = async(req, res, next) => {
 
 export const deleteUserContent: RequestHandler = async(req, res, next) => {
     const contentId = req.body.contentId;
-
+    
     await ContentModel.deleteMany({
-        contentId,
-        //@ts-ignore
-        userId: req.userId
-        
+        _id: contentId
     })
 
     res.json({

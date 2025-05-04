@@ -1,17 +1,17 @@
-import './App.css'
-import { Button } from './components/ui/Button'
-import { PlusIcon } from './icons/PlusIcon'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Signup from "./pages/Signup"
+import Signin from "./pages/Signin"
+import Dashboard from "./pages/Dashboard"
 
-function App() {
+const App = () => {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-      <Button startIcon={<PlusIcon/>} size='sm' variant='primary' text='share'/>
-      <Button size='md' variant='secondary' text='Add Content'/>
-      <Button size='lg' variant='secondary' text='Add Content'/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route index path="/" element={<Signup/>} />
+        <Route path="/signin" element={<Signin/>} />
+        <Route path="/dashboard" element={<Dashboard/>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

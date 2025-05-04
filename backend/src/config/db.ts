@@ -18,6 +18,8 @@ export const contentSchema = new Schema({
     type: { type: String, enum: contentTypes, required: true },
     tags: [{ type: ObjectId, ref: 'Tag' }],
     userId: { type: ObjectId, ref: 'User', required: true },
+    createdAt: { type: Date, default: Date.now },
+    updatedAt: { type: Date, default: Date.now }
 });
 
 export const linkSchema = new Schema({

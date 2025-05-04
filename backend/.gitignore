@@ -1,14 +1,18 @@
 # Node modules
-node_modules/
+node_modules
 
 # Compiled JavaScript files
-dist/
+dist
 
 # TypeScript cache
 *.tsbuildinfo
 
 # Environment variables
 .env
+
+# text file
+
+utils/text.txt
 
 # Logs and debug files
 npm-debug.log*
